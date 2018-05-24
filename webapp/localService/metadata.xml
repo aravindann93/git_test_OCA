@@ -1,0 +1,148 @@
+<edmx:Edmx Version="1.0"
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="b9f94ac46d0d9c440f69519d" xml:lang="en" sap:schema-version="0000"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="b9f94ac46d0d9c440f69519d_Entities" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="pr_itemSet" EntityType="b9f94ac46d0d9c440f69519d.pr_item" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="requisitionerhelpSet" EntityType="b9f94ac46d0d9c440f69519d.requisitionerhelp" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="account_assignment_categorySet" EntityType="b9f94ac46d0d9c440f69519d.account_assignment_category" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="unit_of_measureSet" EntityType="b9f94ac46d0d9c440f69519d.unit_of_measure" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="material_groupSet" EntityType="b9f94ac46d0d9c440f69519d.material_group" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="purchase_grouphelpSet" EntityType="b9f94ac46d0d9c440f69519d.purchase_grouphelp" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="materialhelpSet" EntityType="b9f94ac46d0d9c440f69519d.materialhelp" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="vendorHelpSet" EntityType="b9f94ac46d0d9c440f69519d.vendorHelp" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="purchase_orghelpSet" EntityType="b9f94ac46d0d9c440f69519d.purchase_orghelp" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="cost_centerhelpSet" EntityType="b9f94ac46d0d9c440f69519d.cost_centerhelp" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="gl_accounthelpSet" EntityType="b9f94ac46d0d9c440f69519d.gl_accounthelp" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+            </EntityContainer>
+            <EntityType Name="pr_item">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="material" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Name"/>
+                <Property Name="material_desc" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Category"/>
+                <Property Name="price" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Price"/>
+                <Property Name="currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="account_assignment" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="MainCategory"/>
+                <Property Name="quantity" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Length"/>
+                <Property Name="unit" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="LengthUnit"/>
+                <Property Name="item_category" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="item_category"/>
+                <Property Name="assett" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="assett"/>
+                <Property Name="delivery_date" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="delivery_date"/>
+                <Property Name="material_group" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="material_group"/>
+                <Property Name="plant" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="plant"/>
+                <Property Name="purchasing_group" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="purchasing_group"/>
+                <Property Name="purchasing_org" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="purchasing_org"/>
+                <Property Name="gl_account" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="gl_account"/>
+                <Property Name="cost_center" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="cost_center"/>
+                <Property Name="address_name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_name"/>
+                <Property Name="requisitioner" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="requisitioner"/>
+                <Property Name="address_street" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_street"/>
+                <Property Name="address_house" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_house"/>
+                <Property Name="address_postal_code" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_postal_code"/>
+                <Property Name="address_city" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_city"/>
+                <Property Name="address_country" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_country"/>
+                <Property Name="address_region" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_region"/>
+                <Property Name="item_text" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="item_text"/>
+                <Property Name="item_note" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="item_note"/>
+                <Property Name="vendor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="value"/>
+            </EntityType>
+            <EntityType Name="requisitionerhelp">
+                <Key>
+                    <PropertyRef Name="requisitioner"/>
+                </Key>
+                <Property Name="requisitioner" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="name_first" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Name"/>
+                <Property Name="name_last" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="name_last"/>
+                <Property Name="plant" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="plant"/>
+                <Property Name="purchase_group" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="purchase_group"/>
+                <Property Name="purchase_org" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="purchase_org"/>
+                <Property Name="address_name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_name"/>
+                <Property Name="address_street" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_street"/>
+                <Property Name="address_house_num" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_house_num"/>
+                <Property Name="address_region" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_region"/>
+                <Property Name="address_pincode" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_pincode"/>
+                <Property Name="address_country" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="address_country"/>
+            </EntityType>
+            <EntityType Name="account_assignment_category">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="acc_asign_cat" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="MainCategory"/>
+                <Property Name="language" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="language"/>
+            </EntityType>
+            <EntityType Name="unit_of_measure">
+                <Key>
+                    <PropertyRef Name="unit"/>
+                </Key>
+                <Property Name="unit" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="description" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="description"/>
+                <Property Name="language" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="language"/>
+            </EntityType>
+            <EntityType Name="material_group">
+                <Key>
+                    <PropertyRef Name="materialgroup"/>
+                </Key>
+                <Property Name="materialgroup" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="material_group_desc" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="material_group_desc"/>
+                <Property Name="gl_account" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="gl_account"/>
+                <Property Name="language" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="language"/>
+            </EntityType>
+            <EntityType Name="purchase_grouphelp">
+                <Key>
+                    <PropertyRef Name="purchase_group"/>
+                </Key>
+                <Property Name="purchase_group" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="purchase_group_desc" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="purchase_group_desc"/>
+            </EntityType>
+            <EntityType Name="materialhelp">
+                <Key>
+                    <PropertyRef Name="material"/>
+                </Key>
+                <Property Name="material" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="material_desc" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="material_desc"/>
+                <Property Name="language" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="language"/>
+            </EntityType>
+            <EntityType Name="vendorHelp">
+                <Key>
+                    <PropertyRef Name="vendor"/>
+                </Key>
+                <Property Name="vendor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="country_key" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="country_key"/>
+                <Property Name="name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Name"/>
+                <Property Name="name2" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="long_name"/>
+            </EntityType>
+            <EntityType Name="purchase_orghelp">
+                <Key>
+                    <PropertyRef Name="prorg"/>
+                </Key>
+                <Property Name="prorg" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Name"/>
+                <Property Name="language" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName"/>
+            </EntityType>
+            <EntityType Name="cost_centerhelp">
+                <Key>
+                    <PropertyRef Name="cost_center"/>
+                </Key>
+                <Property Name="cost_center" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="cost_center_desc" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName"/>
+                <Property Name="controlling_area" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="controlling_area"/>
+                <Property Name="language" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="language"/>
+            </EntityType>
+            <EntityType Name="gl_accounthelp">
+                <Key>
+                    <PropertyRef Name="gl_account"/>
+                </Key>
+                <Property Name="gl_account" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="chart_of_acc" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="chart_of_acc"/>
+                <Property Name="gl_acc_desc" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="gl_acc_desc"/>
+                <Property Name="language" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="language"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
