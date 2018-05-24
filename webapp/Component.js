@@ -80,7 +80,12 @@ sap.ui.define([
 			
 			method2: function(){
 				// SElva
+			},
+			
+			Method1: function() {
+				
 			}
+			
 		});
 
 	}
