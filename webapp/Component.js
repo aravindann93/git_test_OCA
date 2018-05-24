@@ -76,6 +76,10 @@ sap.ui.define([
 
 			getUserName: function() { 
 				//test
+			},
+			
+			method2: function(){
+				// SElva
 			}
 		});
 
