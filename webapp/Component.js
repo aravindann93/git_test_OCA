@@ -68,9 +68,12 @@ sap.ui.define([
 					}
 				}
 				return this._sContentDensityClass;
-			}
+			},
 			// xyz : Removed by SElva
-
+			
+			getUserName: function() { 
+				//test
+			}
 		});
 
 	}
