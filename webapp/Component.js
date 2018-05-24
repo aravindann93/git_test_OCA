@@ -66,20 +66,9 @@ sap.ui.define([
 					}
 				}
 				return this._sContentDensityClass;
-			},
-			
-<<<<<<< HEAD
-			getUserName : function() { 
-			/// 
-			// Check user name
 			}
+			xyz
 
-=======
-		getUserName : function() { 
-/// to be done by Aswini 
- debugger;
-}
->>>>>>> refs/remotes/origin/develop
 		});
 
 	}
