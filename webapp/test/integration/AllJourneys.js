@@ -30,6 +30,7 @@ sap.ui.require([
 		"git_test/git_test/test/integration/NavigationJourney",
 		"git_test/git_test/test/integration/NotFoundJourney",
 		"git_test/git_test/test/integration/BusyJourney"
+		
 	], function () {
 		QUnit.start();
 	});
