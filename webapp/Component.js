@@ -70,6 +70,7 @@ sap.ui.define([
 			
 		getUserName : function() { 
 /// to be done by Aswini 
+ debugger;
 }
 		});
 
