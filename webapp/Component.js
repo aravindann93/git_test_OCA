@@ -76,7 +76,12 @@ sap.ui.define([
 
 			getUserName: function() { 
 				//test
+			},
+			
+			Method1: function() {
+				
 			}
+			
 		});
 
 	}
