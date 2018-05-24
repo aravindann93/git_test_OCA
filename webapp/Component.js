@@ -73,6 +73,10 @@ sap.ui.define([
 			
 			getUserId : function(){
 				
+			},
+
+			getUserName: function() { 
+				//test
 			}
 
 		});
