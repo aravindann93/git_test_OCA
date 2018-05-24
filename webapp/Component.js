@@ -69,7 +69,7 @@ sap.ui.define([
 				}
 				return this._sContentDensityClass;
 			}
-			xyz
+			// xyz : Removed by SElva
 
 		});
 
