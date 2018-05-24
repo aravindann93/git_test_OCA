@@ -23,6 +23,8 @@ sap.ui.define([
 			init : function () {
 				this.oListSelector = new ListSelector();
 				this._oErrorHandler = new ErrorHandler(this);
+				
+				// This was changed by Selva
 
 				// set the device model
 				this.setModel(models.createDeviceModel(), "device");
