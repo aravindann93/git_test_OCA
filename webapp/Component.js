@@ -70,7 +70,6 @@ sap.ui.define([
 				return this._sContentDensityClass;
 			},
 			// xyz : Removed by SElva
-			
 			getUserId : function(){
 				
 			},
@@ -78,7 +77,6 @@ sap.ui.define([
 			getUserName: function() { 
 				//test
 			}
-
 		});
 
 	}
